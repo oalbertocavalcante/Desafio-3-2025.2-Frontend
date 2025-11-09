@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definição do sistema de design. Todas as cores, gradientes, fontes, etc devem ser definidas aqui.
+Todas as cores DEVEM estar em formato HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 16%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 20%;
+    --card-foreground: 0 0% 98%;
+
+    --primary: 30 35% 45%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 220 30% 40%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 180 30% 35%;
+    --accent-foreground: 0 0% 98%;
+
+    --afazer: 30 35% 45%;
+    --afazer-foreground: 0 0% 98%;
+
+    --fazendo: 220 30% 40%;
+    --fazendo-foreground: 0 0% 98%;
+
+    --feito: 180 30% 35%;
+    --feito-foreground: 0 0% 98%;
+
+    --border: 0 0% 30%;
+    --input: 0 0% 25%;
+    --ring: 0 0% 50%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
